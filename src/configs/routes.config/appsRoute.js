@@ -1,10 +1,16 @@
 import React from 'react'
-import { APP_PREFIX_PATH } from 'constants/route.constant'
+import {APP_PREFIX_PATH, UI_COMPONENTS_PREFIX_PATH} from 'constants/route.constant'
 import { ADMIN, USER } from 'constants/roles.constant'
 
 const appsRoute = [
     {
-        key: 'appsProject.dashboard',
+        key: 'appsccv.progperso',
+        path: `${APP_PREFIX_PATH}/programme-personalise`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/pp')),
+        authority: [ADMIN, USER],
+    },
+    {
+        key: 'appsccv.PATIENT CCV',
         path: `${APP_PREFIX_PATH}/project/dashboard`,
         component: React.lazy(() => import('views/project/ProjectDashboard')),
         authority: [ADMIN, USER],

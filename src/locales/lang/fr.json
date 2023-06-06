@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "app": "PATIENT CCV",
+    "appsccv": {
+
+      "homepage": "Page d'accueil",
+      "faqs": "Faqs",
+      "programme_personalisé": "Programme personalisé",
+      "service_de_chirurgie cardiaque": "Service de chirurgie cardiaque",
+      "prépartion_préparatoire": "Prépartion préparatoire",
+      "mon_hospitalisation": "Mon hospitalisation",
+      "mon_sortie": "mon sortie",
+      "documents_utiles": "Documents utiles",
+      "apropos": "A propos",
+      "tableau_de_bord": "Tableau de bord",
+      "auto_quesionnaire_covid":"Auto-questionnaire",
+      "questionnaire_J1": "Questionnaire J-1",
+      "questionnaires_medicaux": "Questionnaires Médicaux"
+
+    }
+  }
+}

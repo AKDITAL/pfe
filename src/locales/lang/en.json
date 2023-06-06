@@ -1,12 +1,16 @@
 {
     "nav": {
-        "apps": "Apps",
-        "appsProject": {
-            "project": "Project",
-            "dashboard": "Dashboard",
-            "projectList": "Project List",
-            "scrumBoard": "Scrum Board",
-            "issue": "Issue"
+        "app": "PATIENTS",
+        "appsccv": {
+            "homepage": "Homepage",
+            "faqs": "FQs",
+            "programme_personalisé": "Prsssogramme ",
+            "service_de_chirurgie_cardiaque": "Service ",
+            "prépartion_préparatoire": "Prépartion ",
+            "mon_hospitalisation": "Mon",
+            "mon_sortie": "mon",
+            "documents_utiles": "Documents",
+            "apropos": "About"
         },
         "appsCrm": {
             "crm": "CRM",

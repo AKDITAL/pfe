@@ -4,6 +4,7 @@ import en from './lang/en.json'
 import zh_cn from './lang/zh-cn.json'
 import es from './lang/es.json'
 import ar from './lang/ar.json'
+import fr from './lang/fr.json'
 import appConfig from 'configs/app.config'
 
 const resources = {
@@ -19,6 +20,9 @@ const resources = {
     ar: {
         translation: ar,
     },
+    fr: {
+        translation: fr
+    }
 }
 
 i18n.use(initReactI18next).init({
@@ -29,12 +33,13 @@ i18n.use(initReactI18next).init({
         escapeValue: false,
     },
 })
-
 export const dateLocales = {
     en: () => import('dayjs/locale/en'),
     es: () => import('dayjs/locale/es'),
     zhCn: () => import('dayjs/locale/zh-cn'),
     ar: () => import('dayjs/locale/ar'),
+    fr: () => import('dayjs/locale/fr'),
+
 }
 
 export default i18n

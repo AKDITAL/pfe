@@ -15,6 +15,8 @@ const languageList = [
     { label: 'Chinese', value: 'zh-cn', flag: 'cn' },
     { label: 'Espanol', value: 'es', flag: 'sp' },
     { label: 'Arabic', value: 'ar', flag: 'ar' },
+    { label: 'Francais', value: 'fr', flag: 'fr' },
+
 ]
 
 export const LanguageSelector = ({ className }) => {

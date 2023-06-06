@@ -1,5 +1,5 @@
 .menu-title {
-    @apply uppercase font-semibold px-3 mt-4 mb-2;
+    @apply uppercase text-blue-300 font-semibold px-3 mt-4 mb-2;
 
     &.menu-title-light {
         @apply text-gray-500;

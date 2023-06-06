@@ -1,9 +1,9 @@
 const appConfig = {
     apiPrefix: '/api',
-    authenticatedEntryPath: '/app/sales/dashboard',
+    authenticatedEntryPath: '/app/account/kyc-form',
     unAuthenticatedEntryPath: '/sign-in',
     tourPath: '/app/account/kyc-form',
-    locale: 'en',
+    locale: 'fr',
     enableMock: true,
 }
 

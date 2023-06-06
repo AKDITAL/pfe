@@ -1,62 +1,33 @@
-import { DOCS_PREFIX_PATH } from 'constants/route.constant'
+import {APP_PREFIX_PATH, DOCS_PREFIX_PATH} from 'constants/route.constant'
 import {
     NAV_ITEM_TYPE_TITLE,
     NAV_ITEM_TYPE_ITEM,
 } from 'constants/navigation.constant'
 import { ADMIN, USER } from 'constants/roles.constant'
 
-const docNavigationConfig = [
+const qstNavigationConfig =  [
     {
-        key: 'guide',
+        key: 'appsccv.PATIENT CCV',
         path: '',
-        title: 'Guide',
-        translateKey: 'nav.docs.guide',
-        icon: 'guide',
-        type: NAV_ITEM_TYPE_TITLE,
+        title: 'Questionnaires Medicaux',
+        translateKey: 'nav.appsccv.questionnaires_medicaux',
+        icon: '',
+        type: NAV_ITEM_TYPE_ITEM,
         authority: [ADMIN, USER],
         subMenu: [
-            {
-                key: 'docs.documentation',
-                path: `${DOCS_PREFIX_PATH}/documentation/introduction`,
-                title: 'Documentation',
-                translateKey: 'nav.docs.documentation',
-                icon: 'documentation',
-                type: NAV_ITEM_TYPE_ITEM,
-                authority: [ADMIN, USER],
-                subMenu: [],
-            },
-            {
-                key: 'docs.sharedComponentDoc',
-                path: `${DOCS_PREFIX_PATH}/shared-component-doc/action-link`,
-                title: 'Shared Component',
-                translateKey: 'nav.docs.sharedComponentDoc',
-                icon: 'sharedComponentDoc',
-                type: NAV_ITEM_TYPE_ITEM,
-                authority: [ADMIN, USER],
-                subMenu: [],
-            },
-            {
-                key: 'docs.utilsDoc',
-                path: `${DOCS_PREFIX_PATH}/utils-doc/use-auth`,
-                title: 'Utilities',
-                translateKey: 'nav.docs.utilsDoc',
-                icon: 'utilsDoc',
-                type: NAV_ITEM_TYPE_ITEM,
-                authority: [ADMIN, USER],
-                subMenu: [],
-            },
-            {
-                key: 'docs.changeLog',
-                path: `${DOCS_PREFIX_PATH}/changelog`,
-                title: 'Changelog',
-                translateKey: 'nav.docs.changeLog',
-                icon: 'changeLog',
-                type: NAV_ITEM_TYPE_ITEM,
-                authority: [ADMIN, USER],
-                subMenu: [],
-            },
-        ],
-    },
-]
 
-export default docNavigationConfig
+
+
+
+
+
+
+        ],
+
+
+
+
+    },]
+
+
+export default qstNavigationConfig

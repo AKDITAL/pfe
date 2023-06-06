@@ -59,7 +59,7 @@ const MobileNav = ({ routes }) => {
                 onClick={openDrawer}
             />
             <Drawer
-                title="Navigation"
+                title="AKDITAL"
                 isOpen={isOpen}
                 onClose={onDrawerClose}
                 onRequestClose={onDrawerClose}

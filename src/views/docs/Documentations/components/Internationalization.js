@@ -45,10 +45,10 @@ export default Component`}</SyntaxHighlighter>
 
 const Component = () => {
 
-    const { i18n } = useTranslation()
+ const { i18n } = useTranslation()
 
-    return (
-        <button onClick={() => i18n.changeLanguage('fr')}>Change language</button>
+ return (
+      <button onClick={() => i18n.changeLanguage('fr')}>Change language</button>
     )
 }
 
