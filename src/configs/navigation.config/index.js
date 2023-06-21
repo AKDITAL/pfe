@@ -6,9 +6,8 @@ import qstNavigationConfig from './doc.navigation.config'
 
 const navigationConfig = [
     ...appsNavigationConfig,
-
-    ...pagesNavigationConfig,
-   //...authNavigationConfig,
+   // ...pagesNavigationConfig,
+  // ...authNavigationConfig,
     ...qstNavigationConfig,
 ]
 

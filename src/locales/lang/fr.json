@@ -2,21 +2,41 @@
   "nav": {
     "app": "PATIENT CCV",
     "appsccv": {
-
       "homepage": "Page d'accueil",
-      "faqs": "Faqs",
-      "programme_personalisé": "Programme personalisé",
+      "faqs": "FAQ",
+      "programme_personalisé": "Programme personnalisé",
       "service_de_chirurgie cardiaque": "Service de chirurgie cardiaque",
-      "prépartion_préparatoire": "Prépartion préparatoire",
+      "prépartion_préparatoire": "Préparation préparatoire",
       "mon_hospitalisation": "Mon hospitalisation",
-      "mon_sortie": "mon sortie",
+      "mon_sortie": "Ma sortie",
       "documents_utiles": "Documents utiles",
-      "apropos": "A propos",
+      "apropos": "À propos",
       "tableau_de_bord": "Tableau de bord",
-      "auto_quesionnaire_covid":"Auto-questionnaire",
-      "questionnaire_J1": "Questionnaire J-1",
-      "questionnaires_medicaux": "Questionnaires Médicaux"
-
+      "auto_quesionnaire_covid": "Auto-questionnaire COVID",
+      "questionnaire": "Questionnaire J-1",
+      "questionnaires_medicaux": "Questionnaires médicaux",
+      "nouvelle_page": "Nouvelle page",
+      "page_supplémentaire": "Page supplémentaire"
+    },
+    "authentication": {
+      "authentication": "Autenticación",
+      "signIn": "Registrarse",
+      "signInSimple": "Sencillo",
+      "signInSide": "Lado",
+      "signInCover": "Cubrir",
+      "signUp": "Inscribirse",
+      "signUpSimple": "Sencillo",
+      "signUpSide": "Lado",
+      "signUpCover": "Cubrir",
+      "forgotPassword": "Has olvidado tu contraseña",
+      "forgotPasswordSimple": "Sencillo",
+      "forgotPasswordSide": "Lado",
+      "forgotPasswordCover": "Cubrir",
+      "resetPassword": "Restablecer la contraseña",
+      "resetPasswordSimple": "Sencillo",
+      "resetPasswordSide": "Lado",
+      "resetPasswordCover": "Cubrir"
     }
   }
+
 }

@@ -71,7 +71,7 @@ const MenuCollapse = (props) => {
             <CollapseContextProvider value={isExpanded}>
                 <motion.ul
                     className={direction === 'rtl' ? 'mr-5' : 'ml-5'}
-                    initial={{ opacity: 0, height: 0, overflow: 'hidden' }}
+                    initial={{ opacity: 0, height: 0, overflow: 'auto' }}
                     animate={{
                         opacity: isExpanded ? 1 : 0,
                         height: isExpanded ? getChildrenHeight() : 0,

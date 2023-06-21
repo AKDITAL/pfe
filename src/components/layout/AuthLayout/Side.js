@@ -1,9 +1,9 @@
-import React, { cloneElement } from 'react'
-import { Avatar } from 'components/ui'
+import React, {cloneElement} from 'react'
+import {Avatar} from 'components/ui'
 import Logo from 'components/template/Logo'
-import { APP_NAME } from 'constants/app.constant'
+import {APP_NAME} from 'constants/app.constant'
 
-const Side = ({ children, content, ...rest }) => {
+const Side = ({children, content, ...rest}) => {
     return (
         <div className="grid lg:grid-cols-3 h-full">
             <div
@@ -12,25 +12,25 @@ const Side = ({ children, content, ...rest }) => {
                     backgroundImage: `url('/img/others/auth-side-bg.jpg')`,
                 }}
             >
-                <Logo mode="dark" />
+                <Logo mode="light"/>
                 <div>
                     <div className="mb-6 flex items-center gap-4">
-                        <Avatar
+                      {/*  <Avatar
                             className="border-2 border-white"
                             shape="circle"
                             src="/img/avatars/thumb-10.jpg"
-                        />
+                        />*/}
                         <div className="text-white">
                             <div className="font-semibold text-base">
-                                Brittany Hale
+                                AKDITAL
                             </div>
-                            <span className="opacity-80">CTO, Onward</span>
+                            <span className="opacity-80">AKDITAL </span>
                         </div>
                     </div>
                     <p className="text-lg text-white opacity-80">
-                        Elstar comes with a complete set of UI components
-                        crafted with Tailwind CSS, it fulfilled most of the use
-                        case to create modern and beautiful UI and application
+                        Le Groupe AKDITAL est le leader de la santé privée au Maroc. Avec plus de 20% de la capacité
+                        litière globale du royaume, le groupe détient aujourd’hui 18 établissements multidisciplinaires
+                        répartis sur plusieurs villes du royaume."
                     </p>
                 </div>
                 <span className="text-white">
@@ -41,7 +41,7 @@ const Side = ({ children, content, ...rest }) => {
             <div className="col-span-2 flex flex-col justify-center items-center bg-white dark:bg-gray-800">
                 <div className="xl:min-w-[450px] px-8">
                     <div className="mb-8">{content}</div>
-                    {children ? cloneElement(children, { ...rest }) : null}
+                    {children ? cloneElement(children, {...rest}) : null}
                 </div>
             </div>
         </div>

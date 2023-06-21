@@ -1,7 +1,5 @@
-import {APP_PREFIX_PATH, UI_COMPONENTS_PREFIX_PATH} from 'constants/route.constant'
-import {
-    NAV_ITEM_TYPE_TITLE, NAV_ITEM_TYPE_ITEM,
-} from 'constants/navigation.constant'
+import {APP_PREFIX_PATH} from 'constants/route.constant'
+import {NAV_ITEM_TYPE_ITEM, NAV_ITEM_TYPE_TITLE,} from 'constants/navigation.constant'
 import {ADMIN, USER} from 'constants/roles.constant'
 
 const appsNavigationConfig =
@@ -15,12 +13,11 @@ const appsNavigationConfig =
             type: NAV_ITEM_TYPE_TITLE,
             authority: [ADMIN, USER],
             subMenu: [
-
                 {
                     key: 'appsccv.progperso',
                     path: `${APP_PREFIX_PATH}/programme-personalise`,
-                    title: 'programme personalisé',
-                    translateKey: 'nav.appsccv.progperso',
+                    title: 'Programme personalisé',
+                    translateKey: 'nav.appsccv.programme_personalisé',
                     icon: '',
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
@@ -28,7 +25,7 @@ const appsNavigationConfig =
                 },
                 {
                     key: 'appsccv.scc',
-                    path: `${APP_PREFIX_PATH}/service_de_chirurgie_cardiaque`,
+                    path: `${APP_PREFIX_PATH}/scc`,
                     title: 'Service de chirurgie cardiaque',
                     translateKey: 'nav.appsccv.scc',
                     icon: '',
@@ -37,47 +34,47 @@ const appsNavigationConfig =
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.pp',
-                    path: `${APP_PREFIX_PATH}/pp`,
+                    key: 'appsccv.prepa',
+                    path: `${APP_PREFIX_PATH}/preparatoire`,
                     title: 'Prépartion préparatoire',
-                    translateKey: 'nav.appsccv.pp',
+                    translateKey: 'nav.appsccv.prepa',
                     icon: '',
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.PATIENT CCV',
-                    path: `${APP_PREFIX_PATH}/mon_hospitalisation`,
-                    title: 'mon hospitalisation',
-                    translateKey: 'nav.appsccv.mon_hospitalisation',
+                    key: 'appsccv.hospitalisation',
+                    path: `${APP_PREFIX_PATH}/hospitalisation`,
+                    title: 'Mon hospitalisation',
+                    translateKey: 'nav.appsccv.hospitalisation',
                     icon: '',
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.PATIENT CCV',
-                    path: `${UI_COMPONENTS_PREFIX_PATH}/typography`,
+                    key: 'appsccv.sortie',
+                    path: `${APP_PREFIX_PATH}/sortie`,
                     title: 'Ma sortie',
-                    translateKey: 'nav.appsccv.ma_sortie',
+                    translateKey: 'nav.appsccv.sortie',
                     icon: '',
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.PATIENT CCV',
+                    key: 'appsccv.faq',
                     path: `${APP_PREFIX_PATH}/faq`,
                     title: 'Faq',
-                    translateKey: 'nav.appsccv.faq',
-                    icon: 'navigation',
+                    translateKey: 'nav.appsccv.faqs',
+                    icon: '',
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.PATIENT CCV',
+                    key: 'appsccv.documents',
                     path: `${APP_PREFIX_PATH}/documents`,
                     title: 'Documents',
                     translateKey: 'nav.appsccv.documents',
@@ -87,7 +84,17 @@ const appsNavigationConfig =
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.PATIENT CCV',
+                    key: 'appsccv.apropos',
+                    path: `${APP_PREFIX_PATH}/apropos`,
+                    title: 'Documents',
+                    translateKey: 'nav.appsccv.apropos',
+                    icon: '',
+                    type: NAV_ITEM_TYPE_ITEM,
+                    authority: [ADMIN, USER],
+                    subMenu: [],
+                },
+                {
+                    key: 'appsccv.apropos',
                     path: `${APP_PREFIX_PATH}/apropos`,
                     title: 'A propos',
                     translateKey: 'nav.appsccv.apropos',
@@ -95,15 +102,9 @@ const appsNavigationConfig =
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
                     subMenu: [],
-
-
                 },
-
             ],
 
-
-
-
-},]
+        },]
 
 export default appsNavigationConfig

@@ -1,0 +1,24 @@
+
+{
+  "authentication": {
+    "authentication": "Autenticación",
+    "signIn": "Registrarse",
+    "signInSimple": "Sencillo",
+    "signInSide": "Lado",
+    "signInCover": "Cubrir",
+    "signUp": "Inscribirse",
+    "signUpSimple": "Sencillo",
+    "signUpSide": "Lado",
+    "signUpCover": "Cubrir",
+    "forgotPassword": "Has olvidado tu contraseña",
+    "forgotPasswordSimple": "Sencillo",
+    "forgotPasswordSide": "Lado",
+    "forgotPasswordCover": "Cubrir",
+    "resetPassword": "Restablecer la contraseña",
+    "resetPasswordSimple": "Sencillo",
+    "resetPasswordSide": "Lado",
+    "resetPasswordCover": "Cubrir",
+    "userName": "nom d'utulisateur"
+  }
+
+}

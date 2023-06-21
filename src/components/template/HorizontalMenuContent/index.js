@@ -11,7 +11,7 @@ import {
 } from 'constants/navigation.constant'
 import { useTranslation } from 'react-i18next'
 
-const HorizontalMenuContent = ({ manuVariant, userAuthority = [] }) => {
+const   HorizontalMenuContent = ({ manuVariant, userAuthority = [] }) => {
     const { t } = useTranslation()
 
     return (

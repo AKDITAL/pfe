@@ -18,7 +18,7 @@ const pagesNavigationConfig =
             subMenu: [
 
                 {
-                    key: 'appsccv.PATIENT CCV',
+                    key: 'appsccv.covid',
                     path: `${APP_PREFIX_PATH}/auto_quesionnaire_covid`,
                     title: 'Auto-questionnaire COVID',
                     translateKey: 'nav.appsccv.auto_quesionnaire_covid',

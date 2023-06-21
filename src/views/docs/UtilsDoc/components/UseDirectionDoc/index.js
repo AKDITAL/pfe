@@ -3,7 +3,7 @@ import DemoComponentApi from 'components/docs/DemoComponentApi'
 import DemoLayout from 'components/docs/DemoLayout'
 
 // Demo
-import Example from './Example'
+import FExample from './Example'
 
 const mdPath = 'UseDirectionDoc/'
 

@@ -3,21 +3,21 @@ import { DOCS_PREFIX_PATH } from 'constants/route.constant'
 
 const docsRoute = [
     {
-        key: 'docs.documentation',
-        path: `${DOCS_PREFIX_PATH}/documentation/*`,
-        component: React.lazy(() => import('views/docs/Documentations')),
+        key: 'docs.questionnaire',
+        path: `${DOCS_PREFIX_PATH}/questionnaire`,
+        component: React.lazy(() => import('views/docs/bot')),
         authority: [],
     },
     {
-        key: 'docs.sharedComponentDoc',
-        path: `${DOCS_PREFIX_PATH}/shared-component-doc/*`,
-        component: React.lazy(() => import('views/docs/SharedComponentsDoc')),
+        key: 'docs.covid',
+        path: `${DOCS_PREFIX_PATH}/covid`,
+        component: React.lazy(() => import('views/docs/covid')),
         authority: [],
     },
     {
-        key: 'docs.utilsDoc',
-        path: `${DOCS_PREFIX_PATH}/utils-doc/*`,
-        component: React.lazy(() => import('views/docs/UtilsDoc')),
+        key: 'docs.questionnairej1',
+        path: `${DOCS_PREFIX_PATH}/questionnaire-J1`,
+        component: React.lazy(() => import('views/docs/qst')),
         authority: [],
     },
     {

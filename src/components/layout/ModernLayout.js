@@ -14,7 +14,6 @@ const HeaderActionsStart = () => {
     return (
         <>
             <MobileNav />
-            <SideNavToggle />
             <Search />
         </>
     )

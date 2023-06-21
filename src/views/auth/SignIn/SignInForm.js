@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
     Input,
     Button,
@@ -6,18 +7,21 @@ import {
     FormItem,
     FormContainer,
     Alert,
-} from 'components/ui'
-import { PasswordInput, ActionLink } from 'components/shared'
-import useTimeOutMessage from 'utils/hooks/useTimeOutMessage'
-import { Field, Form, Formik } from 'formik'
-import * as Yup from 'yup'
-import useAuth from 'utils/hooks/useAuth'
+} from 'components/ui';
+import { PasswordInput, ActionLink } from 'components/shared';
+import useTimeOutMessage from 'utils/hooks/useTimeOutMessage';
+import { Field, Form, Formik } from 'formik';
+import * as Yup from 'yup';
+import useAuth from 'utils/hooks/useAuth';
+
+import translation from './translation.json'; // Importez le fichier de traduction
+//import fr from './lang/fr.json';
 
 const validationSchema = Yup.object().shape({
     userName: Yup.string().required('Please enter your user name'),
     password: Yup.string().required('Please enter your password'),
     rememberMe: Yup.bool(),
-})
+});
 
 const SignInForm = (props) => {
     const {
@@ -25,24 +29,24 @@ const SignInForm = (props) => {
         className,
         forgotPasswordUrl = '/forgot-password',
         signUpUrl = '/sign-up',
-    } = props
+    } = props;
 
-    const [message, setMessage] = useTimeOutMessage()
-
-    const { signIn } = useAuth()
+    const [message, setMessage] = useTimeOutMessage();
+    const { signIn } = useAuth();
+    const { t } = useTranslation('nav', { resources: translation }); // Utilisez la fonction t() avec le namespace 'nav' et les ressources de traduction
 
     const onSignIn = async (values, setSubmitting) => {
-        const { userName, password } = values
-        setSubmitting(true)
+        const { userName, password } = values;
+        setSubmitting(true);
 
-        const result = await signIn({ userName, password })
+        const result = await signIn({ userName, password });
 
         if (result.status === 'failed') {
-            setMessage(result.message)
+            setMessage(result.message);
         }
 
-        setSubmitting(false)
-    }
+        setSubmitting(false);
+    };
 
     return (
         <div className={className}>
@@ -60,9 +64,9 @@ const SignInForm = (props) => {
                 validationSchema={validationSchema}
                 onSubmit={(values, { setSubmitting }) => {
                     if (!disableSubmit) {
-                        onSignIn(values, setSubmitting)
+                        onSignIn(values, setSubmitting);
                     } else {
-                        setSubmitting(false)
+                        setSubmitting(false);
                     }
                 }}
             >
@@ -70,7 +74,7 @@ const SignInForm = (props) => {
                     <Form>
                         <FormContainer>
                             <FormItem
-                                label="User Name"
+                                label={t('userName')}
                                 invalid={errors.userName && touched.userName}
                                 errorMessage={errors.userName}
                             >
@@ -78,19 +82,19 @@ const SignInForm = (props) => {
                                     type="text"
                                     autoComplete="off"
                                     name="userName"
-                                    placeholder="User Name"
+                                    placeholder={t('appsccv.homepage')}
                                     component={Input}
                                 />
                             </FormItem>
                             <FormItem
-                                label="Password"
+                                label={t('authentication.authentication')}
                                 invalid={errors.password && touched.password}
                                 errorMessage={errors.password}
                             >
                                 <Field
                                     autoComplete="off"
                                     name="password"
-                                    placeholder="Password"
+                                    placeholder={t('authentication.authentication')}
                                     component={PasswordInput}
                                 />
                             </FormItem>
@@ -99,10 +103,10 @@ const SignInForm = (props) => {
                                     className="mb-0"
                                     name="rememberMe"
                                     component={Checkbox}
-                                    children="Remember Me"
+                                    children={t('authentication.rememberMe')}
                                 />
                                 <ActionLink to={forgotPasswordUrl}>
-                                    Forgot Password?
+                                    {t('authentication.forgotPassword')}
                                 </ActionLink>
                             </div>
                             <Button
@@ -111,18 +115,20 @@ const SignInForm = (props) => {
                                 variant="solid"
                                 type="submit"
                             >
-                                {isSubmitting ? 'Signing in...' : 'Sign In'}
+                                {isSubmitting ? t('authentication.signIn') : t('authentication.signIn')}
                             </Button>
                             <div className="mt-4 text-center">
-                                <span>Don't have an account yet? </span>
-                                <ActionLink to={signUpUrl}>Sign up</ActionLink>
+                                <span>{t('authentication.noAccountYet')} </span>
+                                <ActionLink to={signUpUrl}>
+                                    {t('authentication.signUp')}
+                                </ActionLink>
                             </div>
                         </FormContainer>
                     </Form>
                 )}
             </Formik>
         </div>
-    )
-}
+    );
+};
 
-export default SignInForm
+export default SignInForm;

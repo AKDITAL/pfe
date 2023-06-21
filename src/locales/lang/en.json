@@ -136,5 +136,8 @@
             "utilsDoc": "Utilities",
             "changeLog": "Changelog"
         }
+    },
+    "header":{
+        "profile": "profil english"
     }
 }

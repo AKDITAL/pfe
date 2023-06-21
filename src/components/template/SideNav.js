@@ -88,7 +88,7 @@ const SideNav = () => {
                         !sideNavCollapse && 'side-nav-expand'
                     )}
                 >
-                    <div className="side-nav-header">
+                    <div className="side-nav-header ">
                         <Logo
                             mode={logoMode()}
                             type={sideNavCollapse ? 'streamline' : 'full'}
@@ -102,8 +102,8 @@ const SideNav = () => {
                     {sideNavCollapse ? (
                         menuContent
                     ) : (
-                        <div className="side-nav-content">
-                            <ScrollBar autoHide direction={direction}>
+                        <div className="side-nav-content ">
+                            <ScrollBar autoHide >
                                 {menuContent}
                             </ScrollBar>
                         </div>

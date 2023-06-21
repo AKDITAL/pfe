@@ -24,7 +24,7 @@
 
 .drawer-open {
     &.drawer-lock-scroll {
-        @apply overflow-hidden;
+        @apply overflow-auto;
     }
 }
 

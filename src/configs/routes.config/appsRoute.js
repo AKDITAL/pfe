@@ -1,5 +1,5 @@
 import React from 'react'
-import {APP_PREFIX_PATH, UI_COMPONENTS_PREFIX_PATH} from 'constants/route.constant'
+import {APP_PREFIX_PATH, DOCS_PREFIX_PATH, UI_COMPONENTS_PREFIX_PATH} from 'constants/route.constant'
 import { ADMIN, USER } from 'constants/roles.constant'
 
 const appsRoute = [
@@ -10,11 +10,43 @@ const appsRoute = [
         authority: [ADMIN, USER],
     },
     {
-        key: 'appsccv.PATIENT CCV',
-        path: `${APP_PREFIX_PATH}/project/dashboard`,
-        component: React.lazy(() => import('views/project/ProjectDashboard')),
+        key: 'appsccv.prepa',
+        path: `${APP_PREFIX_PATH}/preparatoire`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/prepa')),
         authority: [ADMIN, USER],
     },
+    {
+        key: 'appsccv.scc',
+        path: `${APP_PREFIX_PATH}/scc`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/chirugie')),
+        authority: [ADMIN, USER],
+    },
+    {
+        key: 'appsccv.hospitalisation',
+        path: `${APP_PREFIX_PATH}/hospitalisation`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/hospitalisation')),
+        authority: [ADMIN, USER],
+    },
+    {
+        key: 'appsccv.faq',
+        path: `${APP_PREFIX_PATH}/faq`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/Faq')),
+        authority: [ADMIN, USER],
+    },
+    {
+        key: 'appsccv.sortie',
+        path: `${APP_PREFIX_PATH}/sortie`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/sortie')),
+        authority: [ADMIN, USER],
+    },
+    {
+        key: 'docs.documents',
+        path: `${APP_PREFIX_PATH}/documents`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/Documents')),
+        authority: [ADMIN, USER],
+    },
+
+
     {
         key: 'appsProject.projectList',
         path: `${APP_PREFIX_PATH}/project/project-list`,

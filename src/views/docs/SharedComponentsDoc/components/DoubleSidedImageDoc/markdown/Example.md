@@ -5,8 +5,8 @@ import { DoubleSidedImage } from 'components/shared'
 const Example = () => {
     return (
         <DoubleSidedImage
-            src="/img/logo/logo1.png"
-            darkModeSrc="/img/logo/logo1.png"
+            src="/img/logo/logo-light-full.jpg"
+            darkModeSrc="/img/logo/akdital.png"
             alt="elstar"
         />
     )

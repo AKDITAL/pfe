@@ -132,5 +132,8 @@
             "utilsDoc": "المرافق",
             "changeLog": "سجل التغيير"
         }
+    },
+    "header":{
+        "profile": "يرشد"
     }
 }
