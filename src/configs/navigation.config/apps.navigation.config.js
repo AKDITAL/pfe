@@ -93,16 +93,7 @@ const appsNavigationConfig =
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
-                {
-                    key: 'appsccv.apropos',
-                    path: `${APP_PREFIX_PATH}/apropos`,
-                    title: 'A propos',
-                    translateKey: 'nav.appsccv.apropos',
-                    icon: '',
-                    type: NAV_ITEM_TYPE_ITEM,
-                    authority: [ADMIN, USER],
-                    subMenu: [],
-                },
+
             ],
 
         },]
