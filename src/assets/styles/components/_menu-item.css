@@ -46,7 +46,7 @@
         }
 
         &.menu-item-active {
-            @apply text-blue-900 dark:text-gray-100 bg-blue-500/[1] dark:bg-white/[.1];
+            @apply text-white dark:text-gray-100 bg-blue-500/[1] dark:bg-white/[.1];
         }
     }
 }

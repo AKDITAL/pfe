@@ -18,6 +18,7 @@
       "nouvelle_page": "Nouvelle page",
       "page_supplémentaire": "Page supplémentaire"
     },
+
     "authentication": {
       "authentication": "Autenticación",
       "signIn": "Registrarse",
@@ -37,6 +38,7 @@
       "resetPasswordSide": "Lado",
       "resetPasswordCover": "Cubrir"
     }
+
   }
 
 }

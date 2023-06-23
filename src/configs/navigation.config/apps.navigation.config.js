@@ -74,10 +74,10 @@ const appsNavigationConfig =
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.documents',
+                    key: 'appsccv.document',
                     path: `${APP_PREFIX_PATH}/documents`,
                     title: 'Documents',
-                    translateKey: 'nav.appsccv.documents',
+                    translateKey: 'nav.appsccv.document',
                     icon: '',
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
@@ -86,13 +86,14 @@ const appsNavigationConfig =
                 {
                     key: 'appsccv.apropos',
                     path: `${APP_PREFIX_PATH}/apropos`,
-                    title: 'Documents',
+                    title: 'apropos',
                     translateKey: 'nav.appsccv.apropos',
                     icon: '',
                     type: NAV_ITEM_TYPE_ITEM,
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
+
 
             ],
 

@@ -2,7 +2,7 @@ import {DOCS_PREFIX_PATH} from 'constants/route.constant'
 import {NAV_ITEM_TYPE_ITEM, NAV_ITEM_TYPE_TITLE,} from 'constants/navigation.constant'
 import {ADMIN, USER} from 'constants/roles.constant'
 
-const qstNavigationConfig = [
+const docsNavigationConfig = [
     {
         key: 'appsccv.PATIENT CCV',
         path: '',
@@ -51,4 +51,4 @@ const qstNavigationConfig = [
     },]
 
 
-export default qstNavigationConfig
+export default docsNavigationConfig
