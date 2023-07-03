@@ -40,12 +40,17 @@ const appsRoute = [
         authority: [ADMIN, USER],
     },
     {
-        key: 'docs.documents',
+        key: 'appsccv.document',
         path: `${APP_PREFIX_PATH}/documents`,
         component: React.lazy(() => import('views/project/ProjectDashboard/Documents')),
         authority: [ADMIN, USER],
     },
-
+    {
+        key: 'appsccv.apropos',
+        path: `${APP_PREFIX_PATH}/apropos`,
+        component: React.lazy(() => import('views/project/ProjectDashboard/Documents')),
+        authority: [ADMIN, USER],
+    },
 
     {
         key: 'appsProject.projectList',

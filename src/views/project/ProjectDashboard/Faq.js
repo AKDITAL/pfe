@@ -1,9 +1,9 @@
 export default function Faq() {
     return (
 
-        <div className="grid grid-flow-row auto-rows-max gap-4">
-            <div className="bg-gray-200">
-                Est-on obligé(e) d’aller en rééducation en post opératoire ?
+        <div className="grid grid-flow-row auto-rows-max gap-4 ">
+            <div className="bg-white rounded">
+              <p className="bg-blue-100 text-center text-xl ">Est-on obligé(e) d’aller en rééducation en post opératoire ?</p>
 
                 La rééducation n’est pas obligatoire mais elle est vivement conseillée car elle fait partie intégrante
                 de votre prise en charge. Les centres de rééducation proposés sont spécialisés dans la réhabilitation
@@ -13,9 +13,9 @@ export default function Faq() {
                 négatifs des facteurs de risque cardiovasculaire. Tout cela est indispensable pour une prise en charge
                 globale de qualité sur le long terme.
             </div>
-            <div className="bg-gray-200">
+            <div className="bg-white rounded">
 
-                Comment et quand réserver un séjour dans un centre de rééducation ?
+                <p className="bg-blue-100 text-center text-xl ">     Comment et quand réserver un séjour dans un centre de rééducation ?</p>
 
                 Les cadres infirmiers effectueront pour vous les demandes et réservation en centre de rééducation grâce
                 à un logiciel de l’hôpital en lien avec tous les centres de la région. Elles vous rendront visite au
@@ -26,13 +26,15 @@ export default function Faq() {
                 vous de l’organisation à mettre en place à votre sortie de l’hôpital. N’hésitez pas à interroger votre
                 chirurgien.
             </div>
-            <div className="bg-gray-200">Quelle est la durée d’un séjour en centre de rééducation ?
+            <div className="bg-white rounded">
+                <p className="bg-blue-100 text-center text-xl ">Quelle est la durée d’un séjour en centre de rééducation ?</p>
 
                 La durée du séjour en centre de rééducation cardiovasculaire en post opératoire de chirurgie cardiaque
                 est habituellement de 3 semaines. Vous pourrez discuter de l’organisation de ce séjour avec les médecins
                 de ces centres à votre arrivée.
             </div>
-            <div className="bg-gray-200">Quelle sera l’organisation à ma sortie de l’hôpital? Est ce que je devrai aller
+            <div className="bg-white rounded">
+                <p className="bg-blue-100 text-center text-xl ">Quelle sera l’organisation à ma sortie de l’hôpital? Est ce que je devrai aller</p>
                 directement en rééducation ? Sera-t-il possible de passer quelques jours à la maison entre mon séjour à
                 l’hôpital et mon entrée dans le centre de rééducation ?
 
@@ -43,10 +45,10 @@ export default function Faq() {
                 l’hôpital avec vous dès votre sortie de réanimation. Pour vous aider dans vos réflexions, votre
                 chirurgien est à votre disposition ainsi que les cadres infirmiers des unités d’hospitalisation.
             </div>
-            <div className="bg-gray-200">
-                Quelle sera la durée de mon hospitalisation ? Pourquoi devrai-je rentrer à l’hôpital deux jours avant la
+            <div className="bg-white rounded">
+                <p className="bg-blue-100 text-center text-xl ">   Quelle sera la durée de mon hospitalisation ? Pourquoi devrai-je rentrer à l’hôpital deux jours avant la
                 chirurgie ?
-
+</p>
                 La durée habituelle d’une hospitalisation pour une chirurgie cardiaque est d’une dizaine de jours. Vous
                 rentrerez à l’hôpital l’avant veille de votre intervention de façon à ce que nous ayons le temps
                 nécessaire à votre préparation et que vous puissiez à nouveau rencontrer un médecin anesthésiste
@@ -56,14 +58,16 @@ export default function Faq() {
                 récupération, de l’introduction de traitements longs à équilibrer ou de la survenue éventuelle de
                 complications pouvant nécessiter de prolonger votre séjour.
             </div>
-            <div className="bg-gray-200">Est-il possible de réserver une chambre individuelle ?
+            <div className="bg-white rounded">
+                <p className="bg-blue-100 text-center text-xl">Est-il possible de réserver une chambre individuelle ?</p>
 
 
                 Une chambre seule vous sera attribuée dans la mesure du possible. L’attribution de ces chambres
                 individuelles est privilégiée pour les patients sortants de réanimation pour leur permettre de mieux se
                 reposer et pour faciliter la surveillance par les différentes équipes infirmières.
             </div>
-            <div className="bg-gray-200">Est-il possible de réserver une chambre individuelle ?
+            <div className="bg-white rounded">
+                <p className="bg-blue-100 text-center text-xl">Est-il possible de réserver une chambre individuelle ?</p>
 
                 Une chambre seule vous sera attribuée dans la mesure du possible. L’attribution de ces chambres
                 individuelles est privilégiée pour les patients sortants de réanimation pour leur permettre de mieux se

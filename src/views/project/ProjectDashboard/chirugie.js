@@ -2,20 +2,20 @@
 export default function Chirugie() {
     return (
         <div className="grid grid-rows-4 grid-flow-col gap-4">
-    <div><div className="bg-gray-200 w-90">
+    <div><div className="bg-white rounded ">
         <div className="h-2"></div>
         <div className="flex">
             <div className="w-3"></div>
             <div className="w-93">
                 <div className="flex">
                     <div className="w-full">
-                        <p className="text-lg font-bold text-left">📍 Adresse</p>
+                        <p className="text-lg font-bold text-left text-blue-500 ">📍 Adresse</p>
                     </div>
                 </div>
                 <div className="h-2"></div>
                 <div className="flex">
                     <div className="w-full">
-                        <p className="text-justify">Service de chirurgie cardio-vasculaire</p>
+                        <p className="text-justify ">Service de chirurgie cardio-vasculaire</p>
                     </div>
                 </div>
                 <div className="h-1"></div>
@@ -36,7 +36,7 @@ export default function Chirugie() {
                         <a href="https://goo.gl/maps/aDi6Ws3qa1K68Kwu8" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center">
                                 <img className="w-6 h-6" src="" alt="" />
-                                <p className="text-lg font-bold text-left text-green-600">Afficher l'adresse dans Google Maps</p>
+                                <p className="text-lg font-bold text-left text-blue-500">Afficher l'adresse dans Google Maps</p>
                             </div>
                         </a>
                     </div>
@@ -44,7 +44,7 @@ export default function Chirugie() {
                 <div className="h-2"></div>
                 <div className="flex">
                     <div className="w-full">
-                        <p className="text-lg font-bold text-justify">🚘 Comment s'y rendre ?</p>
+                        <p className="text-lg font-bold text-justify text-blue-500">🚘 Comment s'y rendre ?</p>
                     </div>
                 </div>
                 <div className="h-2"></div>
@@ -103,23 +103,23 @@ export default function Chirugie() {
     <div>4</div>
 
     <div>
-            <div className="bg-gray-200 flex flex-col items-center">
+            <div className="flex flex-col items-center bg-white rounded border-blue-600">
             <div className="w-3"></div>
             <div className="w-93">
             <div className="flex">
-            <p className="text-lg font-bold text-center">NUMÉROS DE TÉLÉPHONE UTILES</p>
+            <p className="text-lg font-bold text-center text-blue-500">NUMÉROS DE TÉLÉPHONE UTILES</p>
             </div>
             </div>
             <div className="h-2"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left">☎️ CONSULTATION - PROGRAMMATION PRÉPARATION PRÉOPÉRATOIRE</p>
+            <p className="text-base font-bold text-left text-blue-500">☎️ CONSULTATION - PROGRAMMATION PRÉPARATION PRÉOPÉRATOIRE</p>
             </div>
             <div className="flex">
             <p className="text-base text-left">Du lundi au vendredi de 8h30 à 16h</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left">Marie - Elisabeth - Sandrine - Agnès</p>
+            <p className="text-base font-bold text-left text-blue-500">Marie - Elisabeth - Sandrine - Agnès</p>
             </div>
             <div className="flex">
             <p className="text-base text-left">&gt; Prise de rendez-vous : 05 61 32 26 55</p>
@@ -132,7 +132,7 @@ export default function Chirugie() {
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left">☎️ SECRÉTARIAT</p>
+            <p className="text-base font-bold text-left text-blue-500">☎️ SECRÉTARIAT</p>
             </div>
             <div className="flex">
             <p className="text-base text-left">Du lundi au vendredi de 8h30 à 17h30</p>
@@ -149,11 +149,11 @@ export default function Chirugie() {
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left">☎️ CCV 51 (unité 1)</p>
+            <p className="text-base font-bold text-left text-blue-500">☎️ CCV 51 (unité 1)</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left">Cadre infirmier - Mme C. Falco : 05 61 32 24 36</p>
+            <p className="text-base font-bold text-left text-blue-500">Cadre infirmier - Mme C. Falco : 05 61 32 24 36</p>
             </div>
             <div className="flex">
             <p className="text-base text-left">&gt; Accueil : 05 61 32 26 57</p>
@@ -163,11 +163,11 @@ export default function Chirugie() {
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left">☎️ CCV 51 (unité 2)</p>
+            <p className="text-base font-bold text-left text-blue-500">☎️ CCV 51 (unité 2)</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left">Cadre infirmier - Mme C. Faure : 05 61 32 24 47</p>
+            <p className="text-base font-bold text-left text-blue-500">Cadre infirmier - Mme C. Faure : 05 61 32 24 47</p>
             </div>
             <div className="flex">
             <p className="text-base text-left">&gt; Accueil : 05 61 32 26 59</p>

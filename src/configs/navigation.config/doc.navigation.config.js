@@ -4,7 +4,7 @@ import {ADMIN, USER} from 'constants/roles.constant'
 
 const docsNavigationConfig = [
     {
-        key: 'appsccv.PATIENT CCV',
+        key: 'docs.PATIENT CCV',
         path: '',
         title: 'Tableau de bord',
         translateKey: 'nav.appsccv.tableau_de_bord',
@@ -12,7 +12,6 @@ const docsNavigationConfig = [
         type: NAV_ITEM_TYPE_TITLE,
         authority: [ADMIN, USER],
         subMenu: [
-
             {
                 key: 'docs.covid',
                 path: `${DOCS_PREFIX_PATH}/covid`,
@@ -24,8 +23,6 @@ const docsNavigationConfig = [
                 subMenu: [],
             },
             {
-
-
                 key: 'docs.questionnairej1',
                 path: `${DOCS_PREFIX_PATH}/questionnaire-J1`,
                 title: 'Questionnaire J-1',
@@ -36,7 +33,6 @@ const docsNavigationConfig = [
                 subMenu: [],
             },
             {
-
                 key: 'docs.questionnaire',
                 path: `${DOCS_PREFIX_PATH}/questionnaire`,
                 title: 'Questionnaires Medicaux',

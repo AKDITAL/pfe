@@ -15,7 +15,8 @@ const appsNavigationConfig =
             subMenu: [
                 {
                     key: 'appsccv.progperso',
-                    path: `${APP_PREFIX_PATH}/programme-personalise`,
+
+                   path: `${APP_PREFIX_PATH}/programme-personalise`,
                     title: 'Programme personalisé',
                     translateKey: 'nav.appsccv.programme_personalisé',
                     icon: '',
@@ -74,16 +75,6 @@ const appsNavigationConfig =
                     subMenu: [],
                 },
                 {
-                    key: 'appsccv.document',
-                    path: `${APP_PREFIX_PATH}/documents`,
-                    title: 'Documents',
-                    translateKey: 'nav.appsccv.document',
-                    icon: '',
-                    type: NAV_ITEM_TYPE_ITEM,
-                    authority: [ADMIN, USER],
-                    subMenu: [],
-                },
-                {
                     key: 'appsccv.apropos',
                     path: `${APP_PREFIX_PATH}/apropos`,
                     title: 'apropos',
@@ -93,6 +84,17 @@ const appsNavigationConfig =
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
+                {
+                    key: 'appsccv.document',
+                    path: `${APP_PREFIX_PATH}/documents`,
+                    title: 'Documents',
+                    translateKey: 'nav.appsccv.document',
+                    icon: '',
+                    type: NAV_ITEM_TYPE_ITEM,
+                    authority: [ADMIN, USER],
+                    subMenu: [],
+                },
+
 
 
             ],
