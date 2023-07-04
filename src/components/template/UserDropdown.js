@@ -9,11 +9,11 @@ import { HiOutlineUser, HiOutlineCog, HiOutlineLogout } from 'react-icons/hi'
 import { FiActivity } from 'react-icons/fi'
 
 const dropdownItemList = [
-    {
+ /*   {
         label: 'Profil',
         path: '/app/account/settings/profile',
         icon: <HiOutlineUser />,
-    },
+    },*/
     {
         label: 'Paramètre du compte\n',
         path: '/app/account/settings/profile',
