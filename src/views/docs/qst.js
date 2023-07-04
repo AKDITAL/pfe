@@ -1,45 +1,41 @@
-import React from 'react'
-import {Table} from 'components/ui'
+import React from 'react';
+import { Table } from 'components/ui';
 
-const {Tr, Th, Td, THead, TBody} = Table
+const { Tr, Th, Td, THead, TBody } = Table;
 
 const Simple = () => {
     return (
-        <div>
+        <div className="border">
             <Table>
                 <THead>
                     <Tr>
-                        <Th>Symptomes</Th>
-                        <Th>Fievre>38</Th>
-                        <Th>Toux séche</Th>
-                        <Th>Courbatures</Th>
-                        <Th>Difficultés à respirer</Th>
-                        <Th>Perte de l'odorat</Th>
-                        <Th>Perte de dout</Th>
-                        <Th>Diarrhée</Th>
-                        <Th>Entourage atteint de Covid</Th>
-
+                        <Th className="cell-border">Symptomes</Th>
+                        <Th className="cell-border">Fievre &gt; 38</Th>
+                        <Th className="cell-border">Toux séche</Th>
+                        <Th className="cell-border">Courbatures</Th>
+                        <Th className="cell-border">Difficultés à respirer</Th>
+                        <Th className="cell-border">Perte de l'odorat</Th>
+                        <Th className="cell-border">Perte de doute</Th>
+                        <Th className="cell-border">Diarrhée</Th>
+                        <Th className="cell-border">Entourage atteint de Covid</Th>
                     </Tr>
                 </THead>
                 <TBody>
                     <Tr>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
-                        <Td>Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
+                        <Td className="cell-border">Oui</Td>
                     </Tr>
-
-
                 </TBody>
             </Table>
         </div>
-    )
-}
+    );
+};
 
-export default Simple
-
+export default Simple;
