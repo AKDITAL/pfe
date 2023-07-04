@@ -9,13 +9,7 @@ const HeaderFooterBorder = () => {
 
     const cardHeader = (<div className="rounded-tl-lg rounded-tr-lg overflow-hidden">
 
-        <Avatar
-            size={90}
-            className="pl-8"
-            shape="square"
-            src="/img/avatars/thumb-1.jpg"
 
-        />
 
     </div>)
 
@@ -55,13 +49,19 @@ const HeaderFooterBorder = () => {
                 </div>
             </Card>
             </div>
-            <div className="col-span-2 ...">Pour toute date où la pharmacie serait fermée (le dimanche par exemple),
-                veuillez réaliser la tâche assignée le samedi ou le lundi.
+
+            <div className="col-span-2 bg-blue-400">
+                <Card >
+                    <p className="text-red-400 text-lg text-justify ">Pour toute date où la pharmacie serait fermée (le dimanche par exemple),
+                        veuillez réaliser la tâche assignée le samedi ou le lundi.</p>
+                </Card>
+
+
                 <div className="rounded-tl-lg rounded-tr-lg overflow-hidden">
                     <img src="/img/others/ccv_conseils_diet_icon.png" alt="image"/>
                 </div>
             </div>
-            <div className="row-span-2 col-span-2 ...">03</div>
+            <div className="row-span-2 col-span-2 ..."></div>
         </div>
 
 

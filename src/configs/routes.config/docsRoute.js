@@ -8,16 +8,17 @@ const docsRoute = [
         component: React.lazy(() => import('views/docs/bot')),
         authority: [],
     },
-    {
-        key: 'docs.covid',
-        path: `${DOCS_PREFIX_PATH}/covid`,
-        component: React.lazy(() => import('views/docs/covid')),
-        authority: [],
-    },
+
     {
         key: 'docs.questionnairej1',
         path: `${DOCS_PREFIX_PATH}/questionnaire-J1`,
         component: React.lazy(() => import('views/docs/qst')),
+        authority: [],
+    },
+    {
+        key: 'docs.covid',
+        path: `${DOCS_PREFIX_PATH}/covid`,
+        component: React.lazy(() => import('views/docs/covid')),
         authority: [],
     },
     {

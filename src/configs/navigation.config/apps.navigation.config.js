@@ -64,6 +64,18 @@ const appsNavigationConfig =
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
+
+
+                {
+                    key: 'appsccv.document',
+                    path: `${APP_PREFIX_PATH}/documents`,
+                    title: 'Documents',
+                    translateKey: 'nav.appsccv.document',
+                    icon: '',
+                    type: NAV_ITEM_TYPE_ITEM,
+                    authority: [ADMIN, USER],
+                    subMenu: [],
+                },
                 {
                     key: 'appsccv.faq',
                     path: `${APP_PREFIX_PATH}/faq`,
@@ -84,17 +96,6 @@ const appsNavigationConfig =
                     authority: [ADMIN, USER],
                     subMenu: [],
                 },
-                {
-                    key: 'appsccv.document',
-                    path: `${APP_PREFIX_PATH}/documents`,
-                    title: 'Documents',
-                    translateKey: 'nav.appsccv.document',
-                    icon: '',
-                    type: NAV_ITEM_TYPE_ITEM,
-                    authority: [ADMIN, USER],
-                    subMenu: [],
-                },
-
 
 
             ],

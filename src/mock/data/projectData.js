@@ -44,7 +44,7 @@ export const projectList = [
         status: 'none',
         member: [
             {
-                name: 'Carolyn Perkins',
+                name: 'AMARA MOHAMMED',
                 img: '/img/avatars/thumb-1.jpg',
             },
             {

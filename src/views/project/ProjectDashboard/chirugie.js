@@ -1,7 +1,8 @@
+import {Card} from "../../../components/ui";
 
 export default function Chirugie() {
     return (
-        <div className="grid grid-rows-4 grid-flow-col gap-4">
+        <div className="grid grid-rows-4 grid-flow-col gap-4 text-justify">
     <div><div className="bg-white rounded ">
         <div className="h-2"></div>
         <div className="flex">
@@ -97,87 +98,89 @@ export default function Chirugie() {
                 </div>
             </div>
         </div>
-    </div></div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
+  </div></div>
+            <div>composant3</div>
+    <div>composant4</div>
+    <div>composant5</div>
 
     <div>
-            <div className="flex flex-col items-center bg-white rounded border-blue-600">
+        <div className="flex flex-col items-center bg-white rounded border-blue-600 text-justify">
             <div className="w-3"></div>
             <div className="w-93">
-            <div className="flex">
-            <p className="text-lg font-bold text-center text-blue-500">NUMÉROS DE TÉLÉPHONE UTILES</p>
-            </div>
+                <div className="flex">
+                    <p className="text-lg font-bold text-center text-blue-500">NUMÉROS DE TÉLÉPHONE UTILES</p>
+                </div>
             </div>
             <div className="h-2"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left text-blue-500">☎️ CONSULTATION - PROGRAMMATION PRÉPARATION PRÉOPÉRATOIRE</p>
+                <p className="text-base font-bold text-left text-blue-500">☎️ CONSULTATION - PROGRAMMATION PRÉPARATION PRÉOPÉRATOIRE</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">Du lundi au vendredi de 8h30 à 16h</p>
+                <p className="text-base text-left">Du lundi au vendredi de 8h30 à 16h</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left text-blue-500">Marie - Elisabeth - Sandrine - Agnès</p>
+                <p className="text-base font-bold text-left text-blue-500">Marie - Elisabeth - Sandrine - Agnès</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; Prise de rendez-vous : 05 61 32 26 55</p>
+                <p className="text-base text-left">&gt; Prise de rendez-vous : 05 61 32 26 55</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; Programmation : 05 61 32 38 76</p>
+                <p className="text-base text-left">&gt; Programmation : 05 61 32 38 76</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; Infirmières de consultation : 05 61 32 35 53</p>
+                <p className="text-base text-left">&gt; Infirmières de consultation : 05 61 32 35 53</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left text-blue-500">☎️ SECRÉTARIAT</p>
+                <p className="text-base font-bold text-left text-blue-500">☎️ SECRÉTARIAT</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">Du lundi au vendredi de 8h30 à 17h30</p>
+                <p className="text-base text-left">Du lundi au vendredi de 8h30 à 17h30</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base text-left">&gt; 05 61 32 26 52</p>
+                <p className="text-base text-left">&gt; 05 61 32 26 52</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; 05 61 32 26 53</p>
+                <p className="text-base text-left">&gt; 05 61 32 26 53</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; 05 61 32 26 54</p>
+                <p className="text-base text-left">&gt; 05 61 32 26 54</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left text-blue-500">☎️ CCV 51 (unité 1)</p>
+                <p className="text-base font-bold text-left text-blue-500">☎️ CCV 51 (unité 1)</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left text-blue-500">Cadre infirmier - Mme C. Falco : 05 61 32 24 36</p>
+                <p className="text-base font-bold text-left text-blue-500">Cadre infirmier - Mme C. Falco : 05 61 32 24 36</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; Accueil : 05 61 32 26 57</p>
+                <p className="text-base text-left">&gt; Accueil : 05 61 32 26 57</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; Salle de soins : 05 61 32 26 56</p>
+                <p className="text-base text-left">&gt; Salle de soins : 05 61 32 26 56</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left text-blue-500">☎️ CCV 51 (unité 2)</p>
+                <p className="text-base font-bold text-left text-blue-500">☎️ CCV 51 (unité 2)</p>
             </div>
             <div className="h-1.5"></div>
             <div className="flex">
-            <p className="text-base font-bold text-left text-blue-500">Cadre infirmier - Mme C. Faure : 05 61 32 24 47</p>
+                <p className="text-base font-bold text-left text-blue-500">Cadre infirmier - Mme C. Faure : 05 61 32 24 47</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; Accueil : 05 61 32 26 59</p>
+                <p className="text-base text-left">&gt; Accueil : 05 61 32 26 59</p>
             </div>
             <div className="flex">
-            <p className="text-base text-left">&gt; Salle de soins : 05 61 32 26 58</p>
+                <p className="text-base text-left">&gt; Salle de soins : 05 61 32 26 58</p>
             </div>
-            </div>
+        </div>
 
     </div>
+
+
 </div>
     )
 }

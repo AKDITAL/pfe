@@ -12,16 +12,7 @@ const docsNavigationConfig = [
         type: NAV_ITEM_TYPE_TITLE,
         authority: [ADMIN, USER],
         subMenu: [
-            {
-                key: 'docs.covid',
-                path: `${DOCS_PREFIX_PATH}/covid`,
-                title: 'Auto-questionnaire COVID',
-                translateKey: 'nav.docs.auto_quesionnaire_covid',
-                icon: '',
-                type: NAV_ITEM_TYPE_ITEM,
-                authority: [ADMIN, USER],
-                subMenu: [],
-            },
+
             {
                 key: 'docs.questionnairej1',
                 path: `${DOCS_PREFIX_PATH}/questionnaire-J1`,
@@ -42,6 +33,16 @@ const docsNavigationConfig = [
                 authority: [ADMIN, USER],
                 subMenu: [],
 
+            },
+            {
+                key: 'docs.covid',
+                path: `${DOCS_PREFIX_PATH}/covid`,
+                title: 'Auto-questionnaire COVID',
+                translateKey: 'nav.docs.auto_quesionnaire_covid',
+                icon: '',
+                type: NAV_ITEM_TYPE_ITEM,
+                authority: [ADMIN, USER],
+                subMenu: [],
             },
         ]
     },]
