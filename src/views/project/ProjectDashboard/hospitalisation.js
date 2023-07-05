@@ -7,7 +7,7 @@ export default function Hospitalisation() {
                 <p className=" text-center bg-blue-600 rounded text-xl">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
                 <div>
-                    <iframe width="956" height="538" src="https://www.youtube.com/embed/4Lt4nlnmOqc"
+                    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/4Lt4nlnmOqc"
                             title="Le Groupe AKDITAL met en service un nouveau complexe hospitalier à Tanger."
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
