@@ -48,7 +48,7 @@ const appsRoute = [
     {
         key: 'appsccv.apropos',
         path: `${APP_PREFIX_PATH}/apropos`,
-        component: React.lazy(() => import('views/project/ProjectDashboard/Documents')),
+        component: React.lazy(() => import('views/project/ProjectDashboard/apropos')),
         authority: [ADMIN, USER],
     },
 
