@@ -1,11 +1,10 @@
+import DemoBoxContent from "../../../components/docs/DemoBoxContent";
+
 export default function Hospitalisation() {
     return (
-
-        <div className=" grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-4">
-            <div className="col-span-2">doc1</div>
-            <div className="col-span-2">doc02</div>
-            <div className="bg-white rounded text-xl">
-                <p className="text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
+        <div className="grid grid-flow-row auto-rows-max gap-4 ">
+            <DemoBoxContent className="shadow-lg bg-sky-100 text-gray-500">
+                <p className="text-gray-500 text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
                 Le jour de votre arrivée
 
@@ -13,17 +12,9 @@ export default function Hospitalisation() {
 
                 Pensez à signaler vos régimes alimentaires, allergies et convictions religieuses ou toute spécifiée à
                 l’aide-soignante. Votre alimentation, au cours de l’hospitalisation, est ainsi adaptée grâce au
-                partenariat avec le service restauration.</div>
-            <div className="bg-white rounded text-xl">
-                <p className="text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
-
-                Le jour de votre arrivée
-
-                L’équipe paramédicale vous accueille et vous serez examiné(e) par le médecin du service.
-
-                Pensez à signaler vos régimes alimentaires, allergies et convictions religieuses ou toute spécifiée à
-                l’aide-soignante. Votre alimentation, au cours de l’hospitalisation, est ainsi adaptée grâce au
-                partenariat avec le service restauration.</div>            <div className="bg-white rounded col-start-1 col-end-7 text-xl ">
+                partenariat avec le service restauration.
+            </DemoBoxContent>
+            <DemoBoxContent className="text-gray-500 shadow-lg bg-sky-300">
                 <p className="text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
                 Le jour de votre arrivée
@@ -33,14 +24,21 @@ export default function Hospitalisation() {
                 Pensez à signaler vos régimes alimentaires, allergies et convictions religieuses ou toute spécifiée à
                 l’aide-soignante. Votre alimentation, au cours de l’hospitalisation, est ainsi adaptée grâce au
                 partenariat avec le service restauration.
+            </DemoBoxContent>
+            <DemoBoxContent className=" text-gray-500 shadow-lg bg-sky-500">
+                <p className="text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
-                La veille de votre opération
+                Le jour de votre arrivée
 
-                - Votre chirurgien et votre anesthésiste vous rendront visite pour la consultation préopératoire, ils
-                répondront à vos questions ainsi qu’à celles de votre entourage si vous en êtes d’accord.
-                          </div>
+                L’équipe paramédicale vous accueille et vous serez examiné(e) par le médecin du service.
+
+                Pensez à signaler vos régimes alimentaires, allergies et convictions religieuses ou toute spécifiée à
+                l’aide-soignante. Votre alimentation, au cours de l’hospitalisation, est ainsi adaptée grâce au
+                partenariat avec le service restauration.
+            </DemoBoxContent>
         </div>
-
     )
 }
+
+
 
