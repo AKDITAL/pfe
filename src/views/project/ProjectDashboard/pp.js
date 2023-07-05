@@ -61,11 +61,18 @@ const HeaderFooterBorder = () => {
                                  </DemoBoxContent>
                 <DemoBoxContent>
                     <div className="rounded-tl-lg rounded-tr-lg overflow-hidden">
-                        <img src="/img/others/ccv_conseils_diet_icon.png" alt="image"/>
-                    </div>
+                        <Card  bordered>
+                            <h5> Mon programme de la semaine
+                            </h5>
+                            <p className="text-gray-500">
+                                Vous avez  tâche(s) en retard                            </p>
+                        </Card>                    </div>
                     <div className="rounded-tl-lg rounded-tr-lg overflow-hidden">
-                        <img src="/img/ccv-notice-chir-cardiaque-icon.png" alt="image"/>
-                    </div>
+<p>
+   <p>mardi 29 mars 2022</p>
+
+   <p>Compléter mon questionnaire de suivi 3M</p>
+</p>                    </div>
                 </DemoBoxContent>
                {/* <Card >
                     <p className=" text-red-400 text-lg text-justify ">Pour toute date où la pharmacie serait fermée (le dimanche par exemple),
@@ -75,7 +82,6 @@ const HeaderFooterBorder = () => {
 
 
             </div>
-            <div className="row-span-2 col-span-2 ..."></div>
         </div>
 
 
