@@ -321,13 +321,18 @@ export default function Chirugie() {
             <DemoBoxContent className="text-gray-500 shadow-lg bg-sky-300">
                 <p className="text-center bg-blue-200 rounded"></p>
 
-                Le jour de votre arrivée
-
-                L’équipe paramédicale vous accueille et vous serez examiné(e) par le médecin du service.
-
-                Pensez à signaler vos régimes alimentaires, allergies et convictions religieuses ou toute spécifiée à
-                l’aide-soignante. Votre alimentation, au cours de l’hospitalisation, est ainsi adaptée grâce au
-                partenariat avec le service restauration.
+                <div>
+                    <a href="" target="_blank">
+                        <img className="mx-auto bdn-img w-40" src="/img/ccv-notice-chir-cardiaque-icon.png" alt="spirometre"/>
+                        <p className="bdn-usefullLink-title ">
+                            NOTICE DE CHIRURGIE CARDIAQUE</p>
+                    </a>
+                    <a href="" target="_blank">
+                        <img className="mx-auto bdn-img w-40" src="/img/ccv-notice-chir-cardiaque-icon.png" alt="spirometre"/>
+                        <p className="bdn-usefullLink-title ">
+                            NOTICE DE CHIRURGIE CARDIAQUE</p>
+                    </a>
+                </div>
             </DemoBoxContent>
             <DemoBoxContent className=" text-gray-500 shadow-lg bg-sky-500">
                 <div className="bg-white rounded ">
