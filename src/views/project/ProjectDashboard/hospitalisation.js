@@ -3,8 +3,8 @@ import DemoBoxContent from "../../../components/docs/DemoBoxContent";
 export default function Hospitalisation() {
     return (
         <div className="grid grid-flow-row auto-rows-max gap-4 ">
-            <DemoBoxContent className="shadow-lg bg-sky-100 text-gray-500">
-                <p className="text-gray-500 text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
+            <DemoBoxContent className="shadow-lg bg-sky-400 text-white">
+                <p className=" text-center bg-blue-600 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
                 Le jour de votre arrivée
 
@@ -14,8 +14,8 @@ export default function Hospitalisation() {
                 l’aide-soignante. Votre alimentation, au cours de l’hospitalisation, est ainsi adaptée grâce au
                 partenariat avec le service restauration.
             </DemoBoxContent>
-            <DemoBoxContent className="text-gray-500 shadow-lg bg-sky-300">
-                <p className="text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
+            <DemoBoxContent className="text-white shadow-lg bg-sky-400">
+                <p className="text-center bg-blue-600 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
                 Le jour de votre arrivée
 
@@ -25,8 +25,8 @@ export default function Hospitalisation() {
                 l’aide-soignante. Votre alimentation, au cours de l’hospitalisation, est ainsi adaptée grâce au
                 partenariat avec le service restauration.
             </DemoBoxContent>
-            <DemoBoxContent className=" text-gray-500 shadow-lg bg-sky-500">
-                <p className="text-center bg-blue-200 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
+            <DemoBoxContent className=" text-white shadow-lg bg-sky-400">
+                <p className="text-center bg-blue-600 rounded">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
                 Le jour de votre arrivée
 

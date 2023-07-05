@@ -208,8 +208,8 @@ export default function Chirugie() {
 
         </div>*/
         <div className="grid grid-flow-row auto-rows-max gap-4 ">
-            <DemoBoxContent className="shadow-lg bg-sky-100 text-gray-500">
-                <p className="text-gray-500 text-center bg-blue-200 rounded">coordonnées</p>
+            <DemoBoxContent className="shadow-lg bg-sky-500 text-gray-500">
+                <p className="text-gray-500 text-center bg-blue-200 rounded"></p>
 
                 <div>
                     <div className="bg-white rounded ">
@@ -318,18 +318,18 @@ export default function Chirugie() {
                     </div>
                 </div>
             </DemoBoxContent>
-            <DemoBoxContent className="text-gray-500 shadow-lg bg-sky-300">
+            <DemoBoxContent className="text-gray-500 shadow-lg bg-sky-500">
                 <p className="text-center bg-blue-200 rounded"></p>
 
                 <div>
                     <a href="" target="_blank">
                         <img className="mx-auto bdn-img w-40" src="/img/ccv-notice-chir-cardiaque-icon.png" alt="spirometre"/>
-                        <p className="bdn-usefullLink-title ">
+                        <p className=" text-white bdn-usefullLink-title ">
                             NOTICE DE CHIRURGIE CARDIAQUE</p>
                     </a>
                     <a href="" target="_blank">
                         <img className="mx-auto bdn-img w-40" src="/img/ccv-notice-chir-cardiaque-icon.png" alt="spirometre"/>
-                        <p className="bdn-usefullLink-title ">
+                        <p className="text-white bdn-usefullLink-title ">
                             NOTICE DE CHIRURGIE CARDIAQUE</p>
                     </a>
                 </div>

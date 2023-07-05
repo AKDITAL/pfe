@@ -5,8 +5,7 @@ export default function () {
 
         <div className="grid grid-flow-row auto-rows-max gap-4 ">
             <DemoBoxContent className="shadow-lg bg-sky-500 text-white-500">
-                <p className="text-white-500 text-xl text-center bg-blue-200 rounded">AVANT LA CHIRURGIE</p>
-
+                <p className="text-white-500 text-xl text-center bg-blue-600 rounded">AVANT LA CHIRURGIE</p>
                 Madame, Monsieur,
 
                 Vous venez de vous faire opérer du coeur dans notre service. Nous espérons que votre séjour s’est bien
@@ -19,7 +18,7 @@ export default function () {
                 L’équipe de chirurgie cardiaque
             </DemoBoxContent>
             <DemoBoxContent className="text-white-500 shadow-lg bg-sky-500">
-                <p className="text-center text-xl bg-blue-200 rounded">  CONSEILS ET CONSIGNES POST OPÉRATOIRES
+                <p className="text-center text-xl bg-blue-600 rounded">  CONSEILS ET CONSIGNES POST OPÉRATOIRES
                 </p>
 
                 <div className="text-justify">
@@ -34,7 +33,7 @@ export default function () {
 
             </DemoBoxContent>
             <DemoBoxContent className=" text-justify text-white-500 shadow-lg bg-sky-500">
-                <p className="text-xl text-center bg-blue-200 rounded">CICATRICE - STERNUM</p>
+                <p className="text-xl text-center bg-blue-600 rounded">CICATRICE - STERNUM</p>
 
                 <p className="text-xl text-center"> Le sternum met 6 à 8 semaines pour être consolidé.</p>
 
@@ -46,7 +45,7 @@ export default function () {
                 </p>
             </DemoBoxContent>
             <DemoBoxContent className=" text-justify text-white-500 shadow-lg bg-sky-500">
-                <p className="text-xl text-center bg-blue-200 rounded">SURVEILLANCE</p>
+                <p className="text-xl text-center bg-blue-600 rounded">SURVEILLANCE</p>
 
                 <p className="text-red-500 text-xl text-center"> Lors de votre retour à domicile :</p>
 
