@@ -5,7 +5,7 @@ const SignIn = () => {
     return (
         <>
             <div className="mb-8">
-                <h3 className="mb-1">welcomeText
+                <h3 className="mb-1">AKDITAL
                 </h3>
                 <p>Veuillez saisir vos identifiants pour vous connecter !
                 </p>

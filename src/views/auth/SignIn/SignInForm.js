@@ -74,7 +74,7 @@ const SignInForm = (props) => {
                     <Form>
                         <FormContainer>
                             <FormItem
-                                label={t('userName')}
+                                label={t('Utilisateur')}
                                 invalid={errors.userName && touched.userName}
                                 errorMessage={errors.userName}
                             >
@@ -87,7 +87,7 @@ const SignInForm = (props) => {
                                 />
                             </FormItem>
                             <FormItem
-                                label={t('authentication.authentication')}
+                                label={t('Mot de passe')}
                                 invalid={errors.password && touched.password}
                                 errorMessage={errors.password}
                             >
@@ -103,10 +103,10 @@ const SignInForm = (props) => {
                                     className="mb-0"
                                     name="rememberMe"
                                     component={Checkbox}
-                                    children={t('authentication.rememberMe')}
+                                    children={t('Souviens moi')}
                                 />
                                 <ActionLink to={forgotPasswordUrl}>
-                                    {t('authentication.forgotPassword')}
+                                    {t('Mot de passe oublié')}
                                 </ActionLink>
                             </div>
                             <Button
@@ -115,12 +115,12 @@ const SignInForm = (props) => {
                                 variant="solid"
                                 type="submit"
                             >
-                                {isSubmitting ? t('authentication.signIn') : t('authentication.signIn')}
+                                {isSubmitting ? t('signIn') : t('Connexion')}
                             </Button>
                             <div className="mt-4 text-center">
-                                <span>{t('authentication.noAccountYet')} </span>
+                                <span>{t('Vous avez pas de compte ? ')} </span>
                                 <ActionLink to={signUpUrl}>
-                                    {t('authentication.signUp')}
+                                    {t('Inscription')}
                                 </ActionLink>
                             </div>
                         </FormContainer>
