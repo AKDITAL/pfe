@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Documents = () => {
-    return (<div className="flex flex-col text-white ">
+    return (<div className="flex flex-col text-white text-blue-500 ">
         <div className="flex justify-between">
             <div className="w-1/4 "><a href="" target="_blank">
                 <img className="bdn-img w-40" src="/img/ccv-notice-chir-cardiaque-icon.png" alt="spirometre"/>

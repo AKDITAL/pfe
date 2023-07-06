@@ -54,9 +54,9 @@ const HeaderFooterBorder = () => {
             </div>
 
 
-            <div className="col-span-2 bg-blue-400">
-                <DemoBoxContent className=" text-red-700 shadow-lg bg-sky-500">
-                    <p className="text-center bg-blue-200 rounded">Pour toute date où la pharmacie serait fermée (le dimanche par exemple),
+            <div className="col-span-2 bg-blue-600 rounded">
+                <DemoBoxContent className=" text-red-700 shadow-lg bg-blue-600 ">
+                    <p className="text-center bg-white rounded">Pour toute date où la pharmacie serait fermée (le dimanche par exemple),
                         veuillez réaliser la tâche assignée le samedi ou le lundi.</p>
                                  </DemoBoxContent>
                 <DemoBoxContent>
