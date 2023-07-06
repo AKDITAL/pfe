@@ -1,23 +1,20 @@
 import DemoBoxContent from "../../../components/docs/DemoBoxContent";
 
 export default function Hospitalisation() {
-    return (
-        <div className="grid grid-flow-row auto-rows-max gap-4 ">
+    return (<div className="grid grid-flow-row auto-rows-max gap-4 ">
             <DemoBoxContent className="shadow-lg bg-sky-400 text-white">
                 <p className=" text-center bg-blue-600 rounded text-xl">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
                 <div>
-                    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/4Lt4nlnmOqc"
-                            title="Le Groupe AKDITAL met en service un nouveau complexe hospitalier à Tanger."
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen></iframe>
+                    <iframe className="w-full aspect-video ..." src="https://www.youtube.com/embed/4Lt4nlnmOqc"
+
+                    ></iframe>
                 </div>
             </DemoBoxContent>
             <DemoBoxContent className="text-white shadow-lg bg-sky-400 text-justify">
                 <p className="text-center bg-blue-600 rounded text-xl">MON SÉJOUR AVANT LA CHIRURGIE</p>
 
-            <p className="text-center text-xl text-gray-600">  Le jour de votre arrivée :</p>
+                <p className="text-center text-xl text-gray-600"> Le jour de votre arrivée :</p>
 
                 L’équipe paramédicale vous accueille et vous serez examiné(e) par le médecin du service.
 
@@ -37,8 +34,7 @@ export default function Hospitalisation() {
                 <p>✅ Coordonnées de la personne de confiance</p>
 
             </DemoBoxContent>
-        </div>
-    )
+        </div>)
 }
 
 
