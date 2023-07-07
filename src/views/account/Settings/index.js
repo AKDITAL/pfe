@@ -16,11 +16,11 @@ const Billing = lazy(() => import('./components/Billing'))
 const { TabNav, TabList } = Tabs
 
 const settingsMenu = {
-    profile: { label: 'Profile', path: 'profile' },
-    password: { label: 'Password', path: 'password' },
-    notification: { label: 'Notification', path: 'notification' },
-    integration: { label: 'Integration', path: 'integration' },
-    billing: { label: 'Billing', path: 'billing' },
+    profile: { label: 'Profil', path: 'profile' },
+    password: { label: 'Mot de passe', path: 'password' },
+   // notification: { label: 'Notification', path: 'notification' },
+ //   integration: { label: 'Integration', path: 'integration' },
+   // billing: { label: 'Billing', path: 'billing' },
 }
 
 const Settings = () => {

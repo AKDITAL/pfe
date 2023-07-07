@@ -1,30 +1,13 @@
 import React from 'react'
-import {
-    Input,
-    Avatar,
-    Upload,
-    Button,
-    Select,
-    Switcher,
-    Notification,
-    toast,
-    FormContainer,
-} from 'components/ui'
+import {Avatar, Button, FormContainer, Input, Notification, toast, Upload,} from 'components/ui'
 import FormDesription from './FormDesription'
 import FormRow from './FormRow'
-import { Field, Form, Formik } from 'formik'
-import { components } from 'react-select'
-import {
-    HiOutlineUserCircle,
-    HiOutlineMail,
-    HiOutlineBriefcase,
-    HiOutlineUser,
-    HiCheck,
-    HiOutlineGlobeAlt,
-} from 'react-icons/hi'
+import {Field, Form, Formik} from 'formik'
+import {components} from 'react-select'
+import {HiCheck, HiOutlineUser,} from 'react-icons/hi'
 import * as Yup from 'yup'
 
-const { Control } = components
+const {Control} = components
 
 const validationSchema = Yup.object().shape({
     name: Yup.string()
@@ -40,13 +23,13 @@ const validationSchema = Yup.object().shape({
 })
 
 const langOptions = [
-    { value: 'en', label: 'English (US)', imgPath: '/img/countries/us.png' },
-    { value: 'ch', label: '中文', imgPath: '/img/countries/cn.png' },
-    { value: 'jp', label: '日本语', imgPath: '/img/countries/jp.png' },
-    { value: 'fr', label: 'French', imgPath: '/img/countries/fr.png' },
+    {value: 'en', label: 'English (US)', imgPath: '/img/countries/us.png'},
+    {value: 'ch', label: '中文', imgPath: '/img/countries/cn.png'},
+    {value: 'jp', label: '日本语', imgPath: '/img/countries/jp.png'},
+    {value: 'fr', label: 'French', imgPath: '/img/countries/fr.png'},
 ]
 
-const CustomSelectOption = ({ innerProps, label, data, isSelected }) => {
+const CustomSelectOption = ({innerProps, label, data, isSelected}) => {
     return (
         <div
             className={`flex items-center justify-between p-2 ${
@@ -57,15 +40,15 @@ const CustomSelectOption = ({ innerProps, label, data, isSelected }) => {
             {...innerProps}
         >
             <div className="flex items-center">
-                <Avatar shape="circle" size={20} src={data.imgPath} />
+                <Avatar shape="circle" size={20} src={data.imgPath}/>
                 <span className="ml-2 rtl:mr-2">{label}</span>
             </div>
-            {isSelected && <HiCheck className="text-emerald-500 text-xl" />}
+            {isSelected && <HiCheck className="text-emerald-500 text-xl"/>}
         </div>
     )
 }
 
-const CustomControl = ({ children, ...props }) => {
+const CustomControl = ({children, ...props}) => {
     const selected = props.getValue()[0]
     return (
         <Control {...props}>
@@ -82,7 +65,7 @@ const CustomControl = ({ children, ...props }) => {
     )
 }
 
-const Profile = ({ data }) => {
+const Profile = ({data}) => {
     const onSetFormFile = (form, field, file) => {
         form.setFieldValue(field.name, URL.createObjectURL(file[0]))
     }
@@ -90,7 +73,7 @@ const Profile = ({ data }) => {
     const onFormSubmit = (values, setSubmitting) => {
 
         console.log('val', values)
-        toast.push(<Notification title={'Profile updated'} type="success" />, {
+        toast.push(<Notification title={'Profile updated'} type="success"/>, {
             placement: 'top-center',
         })
         setSubmitting(false)
@@ -101,36 +84,37 @@ const Profile = ({ data }) => {
             initialValues={data}
             enableReinitialize
             validationSchema={validationSchema}
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={(values, {setSubmitting}) => {
                 setSubmitting(true)
                 setTimeout(() => {
                     onFormSubmit(values, setSubmitting)
                 }, 1000)
             }}
         >
-            {({ values, touched, errors, isSubmitting, resetForm }) => {
-                const validatorProps = { touched, errors }
+            {({values, touched, errors, isSubmitting, resetForm}) => {
+                const validatorProps = {touched, errors}
                 return (
                     <Form>
                         <FormContainer>
                             <FormDesription
                                 title="General"
-                                desc="Basic info, like your name and address that will displayed in public"
+                                desc="Informations de base, comme votre nom et votre adresse qui seront affichés en public
+"
                             />
                             <FormRow
                                 name="name"
-                                label="Name"
+                                label="Nom"
                                 {...validatorProps}
                             >
                                 <Field
                                     type="text"
                                     autoComplete="off"
                                     name="name"
-                                    placeholder="Name"
+                                    placeholder=""
                                     component={Input}
-                                    prefix={
-                                        <HiOutlineUserCircle className="text-xl" />
-                                    }
+                                    /*  prefix={
+                                          <HiOutlineUserCircle className="text-xl" />
+                                      }*/
                                 />
                             </FormRow>
                             <FormRow
@@ -144,9 +128,9 @@ const Profile = ({ data }) => {
                                     name="email"
                                     placeholder="Email"
                                     component={Input}
-                                    prefix={
-                                        <HiOutlineMail className="text-xl" />
-                                    }
+                                    /*    prefix={
+                                            <HiOutlineMail className="text-xl" />
+                                        }*/
                                 />
                             </FormRow>
                             <FormRow
@@ -155,9 +139,9 @@ const Profile = ({ data }) => {
                                 {...validatorProps}
                             >
                                 <Field name="avatar">
-                                    {({ field, form }) => {
+                                    {({field, form}) => {
                                         const avatarProps = field.value
-                                            ? { src: field.value }
+                                            ? {src: field.value}
                                             : {}
                                         return (
                                             <Upload
@@ -183,7 +167,7 @@ const Profile = ({ data }) => {
                                                     className="border-2 border-white dark:border-gray-800 shadow-lg"
                                                     size={60}
                                                     shape="circle"
-                                                    icon={<HiOutlineUser />}
+                                                    icon={<HiOutlineUser/>}
                                                     {...avatarProps}
                                                 />
                                             </Upload>
@@ -191,7 +175,7 @@ const Profile = ({ data }) => {
                                     }}
                                 </Field>
                             </FormRow>
-                            <FormRow
+                            {/*   <FormRow
                                 name="title"
                                 label="Title"
                                 {...validatorProps}
@@ -207,13 +191,15 @@ const Profile = ({ data }) => {
                                         <HiOutlineBriefcase className="text-xl" />
                                     }
                                 />
-                            </FormRow>
-                            <FormDesription
+                            </FormRow>*/}
+
+                            {/*    <FormDesription
                                 className="mt-8"
                                 title="Preferences"
                                 desc="Your personalized preference displayed in your account"
-                            />
-                            <FormRow
+                            />*/}
+
+                            {/*   <FormRow
                                 name="lang"
                                 label="Language"
                                 {...validatorProps}
@@ -242,8 +228,8 @@ const Profile = ({ data }) => {
                                         />
                                     )}
                                 </Field>
-                            </FormRow>
-                            <FormRow
+                            </FormRow>*/}
+                            {/*   <FormRow
                                 name="timeZone"
                                 label="Time Zone"
                                 {...validatorProps}
@@ -259,29 +245,30 @@ const Profile = ({ data }) => {
                                         <HiOutlineGlobeAlt className="text-xl" />
                                     }
                                 />
-                            </FormRow>
-                            <FormRow
+                            </FormRow>*/}
+                            {/*<FormRow
                                 name="syncData"
                                 label="Sync Data"
                                 {...validatorProps}
                                 border={false}
                             >
                                 <Field name="syncData" component={Switcher} />
-                            </FormRow>
+                            </FormRow>*/}
                             <div className="mt-4 ltr:text-right">
                                 <Button
                                     className="ltr:mr-2 rtl:ml-2"
                                     type="button"
                                     onClick={resetForm}
                                 >
-                                    Reset
+                                    réinitialiser
+
                                 </Button>
                                 <Button
                                     variant="solid"
                                     loading={isSubmitting}
                                     type="submit"
                                 >
-                                    {isSubmitting ? 'Updating' : 'Update'}
+                                    {isSubmitting ? 'Updating' : 'Modifier'}
                                 </Button>
                             </div>
                         </FormContainer>

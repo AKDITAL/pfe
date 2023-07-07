@@ -75,24 +75,24 @@ const Password = ({ data }) => {
                         <Form>
                             <FormContainer>
                                 <FormDesription
-                                    title="Password"
-                                    desc="Enter your current & new password to reset your password"
+                                    title="Mot de passe"
+                                    desc="Entrez votre mot de passe actuel et nouveau pour réinitialiser votre mot de passe"
                                 />
                                 <FormRow
                                     name="password"
-                                    label="Current Password"
+                                    label="Mot de passe actuel"
                                     {...validatorProps}
                                 >
                                     <Field
                                         type="password"
                                         autoComplete="off"
                                         name="password"
-                                        placeholder="Current Password"
+                                        placeholder="Mot de passe actuel"
                                         component={Input}
                                     />
                                 </FormRow>
                                 <FormRow
-                                    name="newPassword"
+                                    name="nouveau mot de passe"
                                     label="New Password"
                                     {...validatorProps}
                                 >
@@ -100,20 +100,20 @@ const Password = ({ data }) => {
                                         type="password"
                                         autoComplete="off"
                                         name="newPassword"
-                                        placeholder="New Password"
+                                        placeholder="nouveau mot de passe"
                                         component={Input}
                                     />
                                 </FormRow>
                                 <FormRow
                                     name="confirmNewPassword"
-                                    label="Confirm Password"
+                                    label="Confirmez le mot de passe"
                                     {...validatorProps}
                                 >
                                     <Field
                                         type="password"
                                         autoComplete="off"
                                         name="confirmNewPassword"
-                                        placeholder="Confirm Password"
+                                        placeholder="Confirmez le mot de passe"
                                         component={Input}
                                     />
                                 </FormRow>
@@ -123,7 +123,7 @@ const Password = ({ data }) => {
                                         type="button"
                                         onClick={resetForm}
                                     >
-                                        Reset
+                                        réinitialiser
                                     </Button>
                                     <Button
                                         variant="solid"
@@ -132,7 +132,7 @@ const Password = ({ data }) => {
                                     >
                                         {isSubmitting
                                             ? 'Updating'
-                                            : 'Update Password'}
+                                            : 'Mettre à jour le mot de passe'}
                                     </Button>
                                 </div>
                             </FormContainer>
@@ -140,8 +140,8 @@ const Password = ({ data }) => {
                     )
                 }}
             </Formik>
-            <div className="mt-6">
-                <FormDesription
+            {/*    <div className="mt-6">
+             <FormDesription
                     title="Where you're signed in"
                     desc="You're signed in to your account on these devices."
                 />
@@ -186,7 +186,7 @@ const Password = ({ data }) => {
                         ))}
                     </div>
                 )}
-            </div>
+            </div>*/}
         </>
     )
 }
